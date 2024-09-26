@@ -747,7 +747,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
   }
   .label-form{
     display: block;
-    padding-bottom: 4px;
+ 
     line-height: 1.17;
     font-size:  12px;
     letter-spacing: 0.04em;
