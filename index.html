@@ -522,26 +522,25 @@
 
         <div class="footer-email">
           <p class="subscribe-text">Subscribe</p>
-          <div class="footer-form">
-            <form class="footer-form-email">
-              <label class="" for="input-subscribe">
-                <input
-                  class="input-subscribe"
-                  type="email"
-                  id="input-subscribe"
-                  placeholder="E-mail"
-                  value="email"
-                />
-              </label>
 
-              <button type="submit" class="button-footer">
-                Subscribe
-                <svg class="button-subscribe" width="24" height="24">
-                  <use href="./images/icons.svg#icon-subscribe"></use>
-                </svg>
-              </button>
-            </form>
-          </div>
+          <form class="footer-form-email">
+            <label class="" for="input-subscribe">
+              <input
+                class="input-subscribe"
+                type="email"
+                id="input-subscribe"
+                placeholder="E-mail"
+                value="email"
+              />
+            </label>
+
+            <button type="submit" class="button-footer">
+              Subscribe
+              <svg class="button-subscribe" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -611,28 +610,30 @@
               required
             ></textarea>
           </div>
-    
-        <div class="checkbox">
-          <input
-            class="checkbox visually-hidden"
-            type="checkbox"
-            name="user-privacy"
-            id="user-privacy"
-            value="true"
-          />
-          <label class="label-privacy" for="user-privacy">
-            <span class="span-check">
-              <svg class="check-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-check"></use>
-              </svg>
-            </span>
-            I accept the terms and conditions of the
-            <a class="privacy-link" href="#">Privacy Policy</a>
-          </label>
-        </div>
-        <button type="submit" class="button button-send">Send</button>
+
+          <div class="checkbox">
+            <input
+              class="checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label class="label-privacy" for="user-privacy">
+              <span class="span-check">
+                <svg class="check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="privacy-link" href="#">Privacy Policy</a>
+            </label>
+          </div>
+          <div>
+            <button type="submit" class="button button-send">Send</button>
+          </div>
+        </form>
       </div>
-          </form>
     </div>
   </body>
 </html>
