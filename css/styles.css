@@ -519,7 +519,7 @@ margin-bottom: 16px;
     margin-left: auto;
    }
 
-.footer-form{
+.footer-form-email{
     display: flex;
     gap: 24px;
     justify-content: center;
@@ -533,13 +533,16 @@ margin-bottom: 16px;
     color: #fff;
 }
 .input-subscribe{
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
     border: 1px solid #fff;
     border-radius: 4px;
     width: 264px;
     height: 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background-color: #2e2f42;
-    color: #fff;
+    background-color: transparent;
+    color: #ffffff;
     padding-left: 16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
                
@@ -555,7 +558,7 @@ margin-bottom: 16px;
 .input-subscribe::placeholder{
     font: 400 12px / 2 "Roboto", sans-serif;
     letter-spacing: 0.04em;
-    color: #fff;
+    color: #fffff;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -564,17 +567,22 @@ margin-bottom: 16px;
     display: flex;
     position: relative;
     border-radius: 4px;
+    border: none;
     justify-content: center;
     align-items: center;
     flex-direction: row;
-   
-    width: 165px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+   min-width: 165px;
     height: 40px;
     background-color: #4d5ae5;
     font: 500 16px / 1.5 "Roboto", sans-serif;
     letter-spacing: 0.04em;
     text-align: center;
-    color: #fff;
+    color: #ffffff;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
@@ -622,18 +630,16 @@ margin-bottom: 16px;
 
 
 .modal{
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 100%;
+    min-height: 584px;
     width: 408px;
     background-color: #fcfcfc;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14),
-        0 1px 3px 0 rgba(46, 47, 66, 0.16),
-        0 2px 1px 0 rgba(0, 0, 2, 0.2);
+    box-shadow:  0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    padding-top: 72px;
+    padding: 72px 24px 24px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -643,6 +649,10 @@ margin-bottom: 16px;
 
 .button-modal{
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
     top: 24px;
     right: 24px;
     width: 24px;
@@ -669,32 +679,39 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 
 .button-modal:hover .button-close,
 .button-modal:focus .button-close{
-    fill: #f4f4fd;
+    fill:#ffffff;
 }
 .modal-text{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     font: 500 16px / 1.5 "Roboto", sans-serif;
     color: #2e2f42;
     letter-spacing: 0.02em;
 }
 
 .contact-form{
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     margin-left: 24px;
     margin-right: 24px;
     position: relative;
    
 }
 .textarea-comment {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    background-color: transparent;
+    border: 1px solid rgba(46, 47, 66, 0.4)
     resize: none;
     width: 100%;
     height: 120px;
-    padding: 16px 8px;
+    padding: 8px 16px;
+    outline: transparent;
     border-radius: 4px;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1)
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 } 
 .textarea-comment:hover,
@@ -711,9 +728,9 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
    padding-left: 38px ;
    border-radius: 4px;
    background-color: transparent;
-   outline: none;
+   outline: transparent;
    border: 1px solid rgba(46, 47, 66, 0.4);
-   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
 .input-wrapper{
@@ -732,9 +749,11 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
   .label-form{
     display: block;
     padding-bottom: 4px;
-    font: 400 12px / 1.16667 "Roboto", sans-serif;
+    line-height: 1.17;
+    font-size:  12px;
     letter-spacing: 0.04em;
     color: #8e8f99;
+    margin-bottom: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -752,12 +771,14 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 
  
   .label-privacy{
-    font: 400 12px / 1.16667 "Roboto", sans-serif;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
     
   }
   .privacy-link{
+    
     font: 400 12px / 1.33333 "Roboto", sans-serif;
     text-decoration: underline;
     text-decoration-skip-ink: none;
@@ -780,6 +801,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 
   }
   .checkbox{
+    margin-bottom: 24px;
 
   }
   .checkbox:checked+ .label-privacy > .span-check {
@@ -788,6 +810,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
     fill: #F4F4FD;
   }
   .button-send{
+    
   margin-top: 24px;
   margin-bottom: 24px;
 
